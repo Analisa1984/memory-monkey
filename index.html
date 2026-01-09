@@ -10,13 +10,103 @@
     <!-- Bootstrap version 5.3.8  CSS link-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
 
     <title>Home Page</title>
   </head>
   <body>
+    <!-- Bootstrap version 5.3.8 Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/game-pics/memory-monkey-transparent-logo.png"
+            alt="memory monkey logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Memory Monkey
+          <img
+            src="assets/images/game-pics/monkey-pic.jpg"
+            alt="memory monkey cartoon"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Play</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-center">Welcome to Memory Monkey</h1>
+    <section class="justify-content">
+      <details>
+        <summary>About Us</summary>
+        <p>
+          Memory Monkey is designed for anyone searching to have some fun during
+          their leisure time. Memory Monkey is a memory game and is relatively
+          easy to play and games such as these may improve memory.
+        </p>
+      </details>
+    </section>
+
+    <section class="justify-content">
+      <details>
+        <summary>How to Play</summary>
+        <p>
+          Welcome to Memory Monkey! To play this cheeky mind game, first a
+          series of images for a few seconds. Your task will be to remember the
+          images and their order. After the images disappear, you will be
+          prompted to select the images in the correct order. The game will keep
+          track of your score and rounds. Try to get the highest score possible!
+        </p>
+        <p>
+          If you enter the sequence incorrectly, you will lose and the game then
+          ends. If you enter the sequence of items correctly, you will advance
+          to the next round.
+        </p>
+        <p>
+          Each round will have an additional item to the sequence. SO, the first
+          round will show you one item, the second round will show you two
+          items, the third round will show you three items, and so on.
+        </p>
+        <p>Enjoy and have fun!</p>
+      </details>
+    </section>
+    <button type="button" class="btn btn-secondary btn-lg">Play Now</button>
+
     <!-- Bootstrap version 5.3.8 JavaScript link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
