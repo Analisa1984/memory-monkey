@@ -18,9 +18,20 @@
     2. I would like a game that is fun, easy to play and navigate.
     3. I would like an easy searchable game to play.
 
-## Wireframes
+## Wireframes:
+
+1. Home Page for mobiles, tablets and PC:
+   ![Home Page Wireframe](assets/images/wireframes/memory-monkey-homepage-wireframes.jpg)
+
+2. Game Page for mobiles, tablets and PC:
+   ![Game Page Wireframes](assets/images/wireframes/memory-monkey-gamespage-wireframes.jpg)
 
 ## Languages and Technologies Used:
+
+1. HTML
+2. CSS
+3. Bootstrap version 5.3.8 Library - for navigation bar, footer and other body elements and class implementation for styling .
+4. Figma software was used to create the wireframes.
 
 ## Links Used
 
@@ -47,6 +58,10 @@
 ## The Design of Memory Monkey and How to play (use the product):
 
 ## References
+
+1. Bootstrap 5.3.8 version library utlized.
+2. Figma software used to create the wireframes.
+3. Free Pik images.
 
 ### Content
 
