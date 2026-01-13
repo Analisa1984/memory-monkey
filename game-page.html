@@ -3,19 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap version 5.3.8  CSS link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS style sheet link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <title>Game Page</title>
   </head>
   <body>
-    <h1>Welcome to the Memory Monkey Game Page</h1>
-    <p>Get ready to have fun!</p>
-    <div>Navigation Bar</div>
-    <div id="game-round">Round 1</div>
-    <div id="score-board">Score: 0</div>
-    <div id="game-area">
-      [Game Area]
+    <!-- Bootstrap version 5.3.8 Navigation Bar -->
 
-      <button type="submit">Submit</button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/game-pics/memory-monkey-transparent-logo.png"
+            alt="memory monkey logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Memory Monkey
+          <img
+            src="assets/images/game-pics/monkey-pic.jpg"
+            alt="memory monkey cartoon"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Play</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="text-center">Welcome to Memory Monkey!</h1>
+    <div class="text-center">
+      <p>Get ready to have fun!</p>
+
+      <div id="game-round">Round 1</div>
+      <div id="score-board">Score: 0</div>
+      <div id="game-area">
+        [Game Area]
+        <div id="circle">
+          <div id="random-items-display"></div>
+        </div>
+      </div>
+      <div id="user-input">
+        [User Input]
+        <div id="fontawesome-numbers">
+          <button id="zero">
+            <i class="fa-solid fa-0" data-type="zero"></i>
+          </button>
+          <button id="one">
+            <i class="fa-solid fa-1" data-type="one"></i>
+          </button>
+          <button id="two">
+            <i class="fa-solid fa-2" data-type="two"></i>
+          </button>
+          <button id="three">
+            <i class="fa-solid fa-3" data-type="three"></i>
+          </button>
+          <button id="four">
+            <i class="fa-solid fa-4" data-type="four"></i>
+          </button>
+          <button id="five">
+            <i class="fa-solid fa-5" data-type="five"></i>
+          </button>
+          <button id="six">
+            <i class="fa-solid fa-6" data-type="six"></i>
+          </button>
+          <button id="seven">
+            <i class="fa-solid fa-7" data-type="seven"></i>
+          </button>
+          <button id="eight">
+            <i class="fa-solid fa-8" data-type="eight"></i>
+          </button>
+          <button id="nine">
+            <i class="fa-solid fa-9" data-type="nine"></i>
+          </button>
+        </div>
+        <div id="fontawesome-letters">
+          <button id="a"><i class="fa-solid fa-a" data-type="a"></i></button>
+          <button id="b"><i class="fa-solid fa-b" data-type="b"></i></button>
+          <button id="c"><i class="fa-solid fa-c" data-type="c"></i></button>
+          <button id="d"><i class="fa-solid fa-d" data-type="d"></i></button>
+          <button id="e"><i class="fa-solid fa-e" data-type="e"></i></button>
+          <button id="f"><i class="fa-solid fa-f" data-type="f"></i></button>
+          <button id="g"><i class="fa-solid fa-g" data-type="g"></i></button>
+          <button id="h"><i class="fa-solid fa-h" data-type="h"></i></button>
+          <button id="i"><i class="fa-solid fa-i" data-type="i"></i></button>
+          <button id="j"><i class="fa-solid fa-j" data-type="j"></i></button>
+        </div>
+        <div id="fontawesome-miscellaneous">
+          <button id="star">
+            <i class="fa-solid fa-star" data-type="star"></i>
+          </button>
+          <button id="heart">
+            <i class="fa-solid fa-heart" data-type="heart"></i>
+          </button>
+          <button id="smile">
+            <i class="fa-regular fa-face-smile" data-type="smile"></i>
+          </button>
+          <button id="moon">
+            <i class="fa-solid fa-moon" data-type="moon"></i>
+          </button>
+          <button id="sun">
+            <i class="fa-solid fa-sun" data-type="sun"></i>
+          </button>
+          <button id="leaf">
+            <i class="fa-solid fa-leaf" data-type="leaf"></i>
+          </button>
+          <button id="tree">
+            <i class="fa-solid fa-tree" data-type="tree"></i>
+          </button>
+          <button id="dove">
+            <i class="fa-solid fa-dove" data-type="dove"></i>
+          </button>
+          <button id="frog">
+            <i class="fa-solid fa-frog" data-type="frog"></i>
+          </button>
+          <button id="house">
+            <i class="fa-solid fa-house" data-type="house"></i>
+          </button>
+        </div>
+        <button data-type="start-game" id="start-game">Start Game</button>
+        <div id="user-reply">
+          <div id="user-answer"></div>
+        </div>
+        <button data-type="delete">Delete</button>
+      </div>
+
+      <button data-type="submit" id="user-entry-final">Submit</button>
+      <button data-type="new-game" id="new-game">New Game</button>
+      <div id="game-over" style="display: none">Game Over!</div>
     </div>
-    <div id="game-over" style="display: none">Game Over!</div>
+
+    <!-- Bootstrap version 5.3.8 JavaScript link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawesome awesome kit JS code -->
+    <script
+      src="https://kit.fontawesome.com/8da35863e9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
