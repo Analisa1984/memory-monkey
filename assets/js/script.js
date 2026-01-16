@@ -1,24 +1,9 @@
 let userAnswer; //document.getElementById("user-answer").value;
 let score = 0;
-document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByTagName("button");
+let buttons = document.getElementsByTagName("button");
+let round = 1;
 
-  for (let button of buttons) {
-    button.addEventListener("click", function () {
-      if (this.getAttribute("data-type") === "start-game") {
-        startGame();
-        displayUserEntry();
-        document.getElementById("start-game").disabled = true;
-      } else {
-        checkAnswer();
-      }
-    });
-  }
-});
-
-function startGame() {
-  // Logic to start the game
-  const zero = document.getElementById("zero").innerHTML;
+const zero = document.getElementById("zero").innerHTML;
   const one = document.getElementById("one").innerHTML;
   const two = document.getElementById("two").innerHTML;
   const three = document.getElementById("three").innerHTML;
@@ -84,15 +69,55 @@ function startGame() {
   ];
   console.log(gameArray);
 
-  let randomGameArrayItem =
-    gameArray[Math.floor(Math.random() * gameArray.length)];
+  let randomIndex= Math.floor(Math.random() * gameArray.length);
+  console.log(randomIndex);
+
+  let randomGameArrayItem = gameArray[randomIndex];
   console.log(randomGameArrayItem);
 
+
+  
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  
+
+  for (let button of buttons) {
+    button.addEventListener("click", function () {
+      if (this.getAttribute("data-type") === "start-game") {
+        console.log("im at line 81 after start game");
+
+
+        startGame();
+        displayUserEntry();
+        document.getElementById("start-game").disabled = true;
+      } else {
+        //checkAnswer();
+      }
+    });
+  }
+});
+
+function startGame() {
+  
   let randomItemsDisplay = document.getElementById("random-items-display");
   console.log(randomItemsDisplay);
 
-  randomItemsDisplay.innerHTML = `Memorize this item: <button>${randomGameArrayItem}</button>`;
+  
+
+  if (round == 1) {
+    randomItemsDisplay.innerHTML = `Memorize this item: <button>${randomGameArrayItem}</button>`;
+  } else {
+    randomItemsDisplay.innerHTML = `Memorize this item: <button>[${randomGameArrayItem} * ${round} </button>`;
+  }
+
+   setTimeout(function () {
+    randomItemsDisplay.innerHTML = " "; 
+  }, 3000);
+  
+    
 }
+
 
 function displayUserEntry() {
   // Logic to display user entry options
@@ -104,6 +129,7 @@ function displayUserEntry() {
   for (let button of buttons) {
     button.addEventListener("click", function (e) {
       if (this.getAttribute("data-type") === "submit") {
+        
         checkAnswer(); // Call the function to check the user's answer when the button is clicked
       } else if (this.getAttribute("data-type") === "delete") {
         userEntryArray.pop();
@@ -112,67 +138,78 @@ function displayUserEntry() {
         
       } else if (this.getAttribute("data-type") === "new-game") {
         userEntryArray = [];
-
+        document.getElementById("game-round").textContent = `Round 1`;
         document.getElementById("user-reply").innerHTML = `<button>${userEntryArray}</button>`;
-       startGame();
+        document.getElementById("score-board").textContent = `Score: 0`;
+        startGame();
+    
       }
       else {
         userEntryArray.push(this.innerHTML);
 
         document.getElementById("user-reply").innerHTML = `<button>${userEntryArray}</button>`; 
         
-        console.log(userAnswer);
+        console.log(userEntryArray);
          }
     });
   }
 }
 
-// function correctAnswer() {
-//   // Logic for correct answer
-//    userAnswer = document.getElementById("user-reply").value;
 
-//   if (userAnswer === randomGameArrayItem) {
-//     return `Good Job! ${userAnswer} is the correct answer.`;
-//   } else {
-//     return `Oops! ${userAnswer} is incorrect. The correct answer was ${randomGameArrayItem}.`;
-//   }
-// }
 
 function checkAnswer() {
   // Logic to proceed to the next round or end the game based on user's answer
+  let userAnswer= document.getElementById("user-reply").innerHTML;
+ console.log("Im at line 146");
 
-  let buttons = document.getElementsByTagName("button");
-  let randomGameArrayItem = document.getElementById("random-items-display").value;
-  let score;
-  let round = 1;
+ 
+
+ 
 
   for (let button of buttons) {
     button.addEventListener("click", function () {
       if (this.getAttribute("data-type") === "submit") {
-        if (userAnswer == randomGameArrayItem) {
-          startNewRound();          
-          return "Congratulations! Your answer is correct.";
-        } else {
+        console.log("random item is  at line 170" + randomGameArrayItem);
+        console.log("user Answewr is at line 171" + userAnswer);
+         if (userAnswer == randomGameArrayItem){
+          console.log("im here at line 157 after if user answer equals random item");
+          // startNewRound();
+          document.getElementById("game-area").innerText = `YOU HAVE WON, PROCEED TO NEXT ROUND!`
+         } else {
+          document.getElementById("game-area").innerHTML = `INCORRECT! NICE TRY! THE CARD SHOWN WAS ${randomGameArrayItem}`;
           endGame();
-          return "Game Over! Your answer is incorrect.";
+         }
         }
-      } else {
-        return `Please submit your answer to check.`;
-      }
-    });
+      });
   }
 }
+
+
+
 function startNewRound() {
   // Logic to start a new round
-  startGame();
-  document.getElementById("game-round").innerHTML = `Round ${++gameRound}`;
+  let round = 1;
+  round += 1;
+  
+  document.getElementById("game-round").innerHTML = `Round ${round}`;
+
+  let randomItemsDisplay = document.getElementById("random-items-display");
+  console.log(randomItemsDisplay);
+
+  randomItemsDisplay.innerHTML = `Memorize this item: <button>${randomGameArrayItem++}</button>`;
+
+   setTimeout(function () {
+    randomItemsDisplay.innerHTML = " "; 
+  }, 3000);
 }
 
 function endGame() {
   // Logic to end the game
-  document.getElementById("game-over").innerHTML = "Game Over!";
+  let gameOver = document.getElementById("game-over");
+  gameOver.textContent = "Game Over!";
   score = 0;
-  document.getElementById("score").innerHTML = `Score: ${score}`;
+  let newScore = document.getElementById("score-board");
+  newScore.textContent = `Score: ${score}`;
 
 }
 

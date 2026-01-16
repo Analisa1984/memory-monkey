@@ -12,6 +12,21 @@
       crossorigin="anonymous"
     />
 
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dawning+of+a+New+Day&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Momo+Signature&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Stack+Sans+Notch:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dawning+of+a+New+Day&family=DynaPuff:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Momo+Signature&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Stack+Sans+Notch:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS style sheet link -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -64,109 +79,110 @@
         </div>
       </div>
     </nav>
+    <div class="main">
+      <h1 class="text-center welcome">Welcome to Memory Monkey!</h1>
+      <div class="text-center">
+        <p class="fun">Get ready to have fun!</p>
 
-    <h1 class="text-center">Welcome to Memory Monkey!</h1>
-    <div class="text-center">
-      <p>Get ready to have fun!</p>
-
-      <div id="game-round">Round 1</div>
-      <div id="score-board">Score: 0</div>
-      <div id="game-area">
-        [Game Area]
-        <div id="circle">
-          <div id="random-items-display"></div>
+        <div id="game-round">Round 1</div>
+        <div class="container">
+          <div id="score-board">Score: 0</div>
         </div>
+        <div id="game-area">
+          <div id="circle">
+            <div id="random-items-display"></div>
+          </div>
+        </div>
+        <div id="user-input">
+          [User Input]
+          <div id="fontawesome-numbers">
+            <button id="zero">
+              <i class="fa-solid fa-0" data-type="zero"></i>
+            </button>
+            <button id="one">
+              <i class="fa-solid fa-1" data-type="one"></i>
+            </button>
+            <button id="two">
+              <i class="fa-solid fa-2" data-type="two"></i>
+            </button>
+            <button id="three">
+              <i class="fa-solid fa-3" data-type="three"></i>
+            </button>
+            <button id="four">
+              <i class="fa-solid fa-4" data-type="four"></i>
+            </button>
+            <button id="five">
+              <i class="fa-solid fa-5" data-type="five"></i>
+            </button>
+            <button id="six">
+              <i class="fa-solid fa-6" data-type="six"></i>
+            </button>
+            <button id="seven">
+              <i class="fa-solid fa-7" data-type="seven"></i>
+            </button>
+            <button id="eight">
+              <i class="fa-solid fa-8" data-type="eight"></i>
+            </button>
+            <button id="nine">
+              <i class="fa-solid fa-9" data-type="nine"></i>
+            </button>
+          </div>
+          <div id="fontawesome-letters">
+            <button id="a"><i class="fa-solid fa-a" data-type="a"></i></button>
+            <button id="b"><i class="fa-solid fa-b" data-type="b"></i></button>
+            <button id="c"><i class="fa-solid fa-c" data-type="c"></i></button>
+            <button id="d"><i class="fa-solid fa-d" data-type="d"></i></button>
+            <button id="e"><i class="fa-solid fa-e" data-type="e"></i></button>
+            <button id="f"><i class="fa-solid fa-f" data-type="f"></i></button>
+            <button id="g"><i class="fa-solid fa-g" data-type="g"></i></button>
+            <button id="h"><i class="fa-solid fa-h" data-type="h"></i></button>
+            <button id="i"><i class="fa-solid fa-i" data-type="i"></i></button>
+            <button id="j"><i class="fa-solid fa-j" data-type="j"></i></button>
+          </div>
+          <div id="fontawesome-miscellaneous">
+            <button id="star">
+              <i class="fa-solid fa-star" data-type="star"></i>
+            </button>
+            <button id="heart">
+              <i class="fa-solid fa-heart" data-type="heart"></i>
+            </button>
+            <button id="smile">
+              <i class="fa-solid fa-face-smile" data-type="smile"></i>
+            </button>
+            <button id="moon">
+              <i class="fa-solid fa-moon" data-type="moon"></i>
+            </button>
+            <button id="sun">
+              <i class="fa-solid fa-sun" data-type="sun"></i>
+            </button>
+            <button id="leaf">
+              <i class="fa-solid fa-leaf" data-type="leaf"></i>
+            </button>
+            <button id="tree">
+              <i class="fa-solid fa-tree" data-type="tree"></i>
+            </button>
+            <button id="dove">
+              <i class="fa-solid fa-dove" data-type="dove"></i>
+            </button>
+            <button id="frog">
+              <i class="fa-solid fa-frog" data-type="frog"></i>
+            </button>
+            <button id="house">
+              <i class="fa-solid fa-house" data-type="house"></i>
+            </button>
+          </div>
+          <button data-type="start-game" id="start-game">Start Game</button>
+          <div id="user-reply">
+            <div id="user-answer"></div>
+          </div>
+          <button data-type="delete">Delete</button>
+        </div>
+
+        <button data-type="submit" id="user-entry-final">Submit</button>
+        <button data-type="new-game" id="new-game">New Game</button>
+        <div id="game-over"></div>
       </div>
-      <div id="user-input">
-        [User Input]
-        <div id="fontawesome-numbers">
-          <button id="zero">
-            <i class="fa-solid fa-0" data-type="zero"></i>
-          </button>
-          <button id="one">
-            <i class="fa-solid fa-1" data-type="one"></i>
-          </button>
-          <button id="two">
-            <i class="fa-solid fa-2" data-type="two"></i>
-          </button>
-          <button id="three">
-            <i class="fa-solid fa-3" data-type="three"></i>
-          </button>
-          <button id="four">
-            <i class="fa-solid fa-4" data-type="four"></i>
-          </button>
-          <button id="five">
-            <i class="fa-solid fa-5" data-type="five"></i>
-          </button>
-          <button id="six">
-            <i class="fa-solid fa-6" data-type="six"></i>
-          </button>
-          <button id="seven">
-            <i class="fa-solid fa-7" data-type="seven"></i>
-          </button>
-          <button id="eight">
-            <i class="fa-solid fa-8" data-type="eight"></i>
-          </button>
-          <button id="nine">
-            <i class="fa-solid fa-9" data-type="nine"></i>
-          </button>
-        </div>
-        <div id="fontawesome-letters">
-          <button id="a"><i class="fa-solid fa-a" data-type="a"></i></button>
-          <button id="b"><i class="fa-solid fa-b" data-type="b"></i></button>
-          <button id="c"><i class="fa-solid fa-c" data-type="c"></i></button>
-          <button id="d"><i class="fa-solid fa-d" data-type="d"></i></button>
-          <button id="e"><i class="fa-solid fa-e" data-type="e"></i></button>
-          <button id="f"><i class="fa-solid fa-f" data-type="f"></i></button>
-          <button id="g"><i class="fa-solid fa-g" data-type="g"></i></button>
-          <button id="h"><i class="fa-solid fa-h" data-type="h"></i></button>
-          <button id="i"><i class="fa-solid fa-i" data-type="i"></i></button>
-          <button id="j"><i class="fa-solid fa-j" data-type="j"></i></button>
-        </div>
-        <div id="fontawesome-miscellaneous">
-          <button id="star">
-            <i class="fa-solid fa-star" data-type="star"></i>
-          </button>
-          <button id="heart">
-            <i class="fa-solid fa-heart" data-type="heart"></i>
-          </button>
-          <button id="smile">
-            <i class="fa-regular fa-face-smile" data-type="smile"></i>
-          </button>
-          <button id="moon">
-            <i class="fa-solid fa-moon" data-type="moon"></i>
-          </button>
-          <button id="sun">
-            <i class="fa-solid fa-sun" data-type="sun"></i>
-          </button>
-          <button id="leaf">
-            <i class="fa-solid fa-leaf" data-type="leaf"></i>
-          </button>
-          <button id="tree">
-            <i class="fa-solid fa-tree" data-type="tree"></i>
-          </button>
-          <button id="dove">
-            <i class="fa-solid fa-dove" data-type="dove"></i>
-          </button>
-          <button id="frog">
-            <i class="fa-solid fa-frog" data-type="frog"></i>
-          </button>
-          <button id="house">
-            <i class="fa-solid fa-house" data-type="house"></i>
-          </button>
-        </div>
-        <button data-type="start-game" id="start-game">Start Game</button>
-        <div id="user-reply">
-          <div id="user-answer"></div>
-        </div>
-        <button data-type="delete">Delete</button>
-      </div>
-
-      <button data-type="submit" id="user-entry-final">Submit</button>
-      <button data-type="new-game" id="new-game">New Game</button>
-      <div id="game-over" style="display: none">Game Over!</div>
     </div>
-
     <!-- Bootstrap version 5.3.8 JavaScript link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -180,6 +196,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/myscript.js"></script>
   </body>
 </html>

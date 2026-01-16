@@ -74,3 +74,22 @@ const zero = document.getElementById("zero").innerHTML;
 
   let randomGameArrayItem = gameArray[randomIndex];
   console.log(randomGameArrayItem);
+
+  document.addEventListener("DOMContentLoaded", function () {
+  
+
+  for (let button of buttons) {
+    button.addEventListener("click", function () {
+      if (this.getAttribute("data-type") === "start-game") {
+        console.log("im at line 81 after start game");
+
+
+        startGame();
+        displayUserEntry();
+        document.getElementById("start-game").disabled = true;
+      } else {
+        //checkAnswer();
+      }
+    });
+  }
+});
