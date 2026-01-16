@@ -1,1 +1,68 @@
+body {
+  background-color: burlywood;
+}
 
+.welcome {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: navy;
+  font-family: orbitron;
+  margin-bottom: 4vw;
+}
+
+:hover > .fa-solid {
+  background-color: goldenrod;
+}
+
+button {
+  background-color: whitesmoke;
+  color: green;
+  font-family: orbitron;
+  font-size: xx-large;
+  font-weight: bolder;
+  border: 3px solid black;
+  border-radius: 12px;
+  margin: 0.25vw;
+}
+
+#game-round,
+.fun {
+  font-family: DynaPuff;
+  font-size: 2rem;
+  margin-bottom: 1.5vw;
+}
+
+#score-board {
+  border: 3px solid whitesmoke;
+  background-color: orangered;
+  font-family: DynaPuff;
+  font-size: 1.2em;
+  color: whitesmoke;
+  padding: 2vw;
+  border-radius: 50%;
+  width: 17%;
+  height: 17%;
+  aspect-ratio: 1/1;
+  /* style to center the score-board div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#random-items-display {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+#user-input {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+.main {
+  margin: 7vw;
+  padding: 7vw;
+  border: 7px solid green;
+  border-radius: 50px;
+}
