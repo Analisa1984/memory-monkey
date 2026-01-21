@@ -103,6 +103,10 @@ button {
   margin-top: 3vw;
 }
 
+.font {
+  display: none;
+}
+
 /* styling applied to border around the game */
 .main {
   margin: 5vw;
