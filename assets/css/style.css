@@ -1,48 +1,89 @@
+.navbar {
+  background-color: rgb(193, 200, 207) !important;
+}
+
+/* styles to blend white background images of the monkey images into the bootstrap 5.3.8 navigation bar */
+img {
+  mix-blend-mode: multiply;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   background-color: burlywood;
 }
 
+/* styles applied to the welcome message */
 .welcome {
-  font-size: 4rem;
+  font-size: 2.2rem;
   font-weight: bolder;
   color: navy;
   font-family: orbitron;
-  margin-bottom: 4vw;
+  margin-bottom: 1vw;
 }
-
+/* Styles applied to the fontawesome icon buttons when hovered, to show where your pointer is */
 :hover > .fa-solid {
   background-color: goldenrod;
 }
+/* Styles applied to the Submit button to show red when pointer is over it */
+:hover > #user-entry-final {
+  color: red;
+  background-color: black;
+}
+/* Styles applied to the New Game  button to show gold when pointer is over it */
+:hover > #new-game {
+  color: gold;
+  background-color: black;
+}
 
+:hover > #start-game {
+  color: gold;
+  background-color: black;
+}
+
+:hover > #delete {
+  color: red;
+  background-color: black;
+}
+
+.container button {
+  width: 100%;
+}
+
+/* same styles applied to all the buttons for uniformity*/
 button {
   background-color: whitesmoke;
   color: green;
   font-family: orbitron;
-  font-size: xx-large;
+  font-size: medium;
   font-weight: bolder;
   border: 3px solid black;
   border-radius: 12px;
   margin: 0.25vw;
 }
 
+/* styles applied to the round number and the get ready to have fun line.  */
 #game-round,
 .fun {
   font-family: DynaPuff;
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-bottom: 1.5vw;
 }
 
+/* Styles applied to the red score board, to make it look unique so that user can easily find his/her score. */
 #score-board {
   border: 3px solid whitesmoke;
-  background-color: orangered;
+  background-color: rgb(255, 3, 3);
   font-family: DynaPuff;
   font-size: 1.2em;
   color: whitesmoke;
-  padding: 2vw;
   border-radius: 50%;
-  width: 17%;
-  height: 17%;
-  aspect-ratio: 1/1;
+  width: 40%;
+  height: 10%;
+  aspect-ratio: 5/2;
   /* style to center the score-board div */
   display: flex;
   justify-content: center;
@@ -50,19 +91,24 @@ button {
   margin: auto;
 }
 
+/* Styles applied to the are where the random card item(s) will show up */
 #random-items-display {
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  height: 3vh;
 }
 
+/* styles applied to the user input area */
 #user-input {
   margin-top: 3vw;
-  margin-bottom: 3vw;
 }
 
+/* styling applied to border around the game */
 .main {
-  margin: 7vw;
-  padding: 7vw;
+  margin: 5vw;
+  padding: 2vw;
   border: 7px solid green;
   border-radius: 50px;
+  margin-bottom: 10vw;
+  text-align: justify;
 }
