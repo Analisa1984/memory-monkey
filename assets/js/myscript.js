@@ -49,7 +49,7 @@ let gameScore = 0;
         fa = gameArray[i];
       }
 
-      html += `<button id="${gameArray[i]}"><i button-name="${gameArray[i]}" class="fa-solid fa-${fa}" aria-label="input ${fa}" data-type="${gameArray[i]}" input-type="button"></i></button>`;
+      html += `<button id="${gameArray[i]}"><i button-name="${gameArray[i]}" class="fa-solid fa-${fa}" aria-label="${fa}" data-type="${gameArray[i]}" ></i></button>`;
 
       //split buttons into rows of 6
 
