@@ -39,6 +39,9 @@
 
 ## Results from Initial Testing
 
+- Low Accessibility reports from check initially done
+  ![Low Accessibility]
+
 ## Fixed:
 
 ## Results from Final Testing
