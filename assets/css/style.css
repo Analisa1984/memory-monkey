@@ -76,7 +76,7 @@ button {
 /* Styles applied to the red score board, to make it look unique so that user can easily find his/her score. */
 #score-board {
   border: 3px solid whitesmoke;
-  background-color: rgb(255, 3, 3);
+  background-color: #e30000;
   font-family: DynaPuff;
   font-size: 1.2em;
   color: whitesmoke;
