@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.om" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dawning+of+a+New+Day&family=DynaPuff:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Momo+Signature&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Stack+Sans+Notch:wght@200..700&display=swap"
@@ -34,16 +34,15 @@
   </head>
   <body>
     <!-- Bootstrap version 5.3.8 Navigation Bar -->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 fs-6">
       <div class="container-fluid justify-content-center">
         <a class="navbar-brand" href="index.html">
           <img
-            src="assets/images/game-pics/memory-monkey-transparent-logo.png"
-            alt="memory monkey logo"
+            src="assets/images/game-pics/monkey-pic.jpg"
+            alt="memory monkey cartoon"
             width="30"
             height="24"
-            class="d-inline-block align-text-top"
+            class="d-inline-block align-text-top img-fluid"
           />
           Memory Monkey
           <img
@@ -51,7 +50,7 @@
             alt="memory monkey cartoon"
             width="30"
             height="24"
-            class="d-inline-block align-text-top"
+            class="d-inline-block align-text-top img-fluid"
           />
         </a>
         <button
@@ -73,55 +72,63 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Play</a>
+              <a class="nav-link" href="game-page.html">Play</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <h1 class="text-center">Welcome to Memory Monkey</h1>
-    <section class="justify-content">
-      <details>
-        <summary>About Us</summary>
-        <p>
-          Memory Monkey is designed for anyone searching to have some fun during
-          their leisure time. Memory Monkey is a memory game and is relatively
-          easy to play and games such as these may improve memory.
-        </p>
-      </details>
-    </section>
+    <div class="main">
+      <h1 class="text-center">Welcome to Memory Monkey</h1>
+      <section class="">
+        <details>
+          <summary>About Us</summary>
+          <p>
+            Memory Monkey is designed for anyone searching to have some fun
+            during their leisure time. Memory Monkey is a memory game and is
+            relatively easy to play and games such as these may improve memory.
+          </p>
+        </details>
+      </section>
 
-    <section class="justify-content">
-      <details>
-        <summary>How to Play</summary>
-        <p>
-          Welcome to Memory Monkey! To play this cheeky mind game, first a
-          series of images for a few seconds. Your task will be to remember the
-          images and their order. After the images disappear, you will be
-          prompted to select the images in the correct order. The game will keep
-          track of your score and rounds. Try to get the highest score possible!
-        </p>
-        <p>
-          If you enter the sequence incorrectly, you will lose and the game then
-          ends. If you enter the sequence of items correctly, you will advance
-          to the next round.
-        </p>
-        <p>
-          Each round will have an additional item to the sequence. SO, the first
-          round will show you one item, the second round will show you two
-          items, the third round will show you three items, and so on.
-        </p>
-        <p>Enjoy and have fun!</p>
-      </details>
-    </section>
-    <button
-      type="button"
-      class="btn btn-secondary btn-lg play"
-      onClick="window.location.href='game-page.html'"
-    >
-      Play Now
-    </button>
-
+      <section class="">
+        <details>
+          <summary>How to Play</summary>
+          <p>
+            Welcome to Memory Monkey! To play this cheeky mind game, first a
+            single image will be shown for 3 few seconds. the second round will
+            then show 3 images and each subsequent round will show an additional
+            image. Your task will be to remember the images in the order it is
+            shown to you. After the images disappear, you will be prompted to
+            select the images in the correct order. The game will keep track of
+            your score (shown to you in the red oval image written as score) and
+            rounds. Try to get the highest score possible!
+          </p>
+          <p>
+            If you enter the items in the correct order as shown, you get 10
+            points and your score increases. If you enter the sequence
+            incorrectly, you will lose 2 points and the game will prompt you to
+            enter the correct items again. If you enter the sequence of items
+            correctly, you will advance to the next round.
+          </p>
+          <p>
+            At the end of the game you will be given the option to proceed to a
+            new game. If you get stuck in the game you can choose to start a new
+            game.
+          </p>
+          <p>Enjoy and have fun!</p>
+        </details>
+      </section>
+      <div class="d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn btn-secondary btn-lg play"
+          onClick="window.location.href='game-page.html'"
+        >
+          Play Now
+        </button>
+      </div>
+    </div>
     <!-- Bootstrap version 5.3.8 JavaScript link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
