@@ -38,17 +38,18 @@ body {
   color: gold;
   background-color: black;
 }
-
+/* Styles applied to the Start Game  button to show gold when pointer is over it */
 :hover > #start-game {
   color: gold;
   background-color: black;
 }
-
+/* Styles applied to the Delete  button to show red when pointer is over it */
 :hover > #delete {
   color: red;
   background-color: black;
 }
 
+/* Styles applied to all buttons */
 .container button {
   width: 30%;
 }
@@ -103,6 +104,7 @@ button {
   margin-top: 3vw;
 }
 
+/* styles applied to the span element in fontawesome buttons to pass accessibility checks but text not needed as the buttons have symbols display */
 .font {
   display: none;
 }
