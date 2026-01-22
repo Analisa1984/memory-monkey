@@ -48,6 +48,9 @@
 
 ## Media Used
 
+- Free Pik image for Navigation Bar - happy monkey cartoon character by Brgfx at www.freepik.com
+  ![Happy Monkey cartoon image used in Navigation Bar](assets/images/game-pics/monkey-pic.jpg)
+
 ## Results from Initial Testing
 
 - Low Accessibility reports from check initially done
@@ -178,15 +181,16 @@ Deployed to GitHub Pages on 21st January 2026.
 
 ## References
 
-1. Bootstrap 5.3.8 version library utlized.
-2. Figma software used to create the wireframes.
-3. Free Pik images.
-4. Google Fonts - orbitron, DynaPuff at https://fonts.google.com/
-5. Fontawesome Kit at https://fontawesome.com/
-6. The W3C CSS Validation service at https://jigsaw.w3.org/css-validator/
-7. The W3 Nu HTML Checker at https://validator.w3.org/nu/
-8. Wave Web Accessibility Evaluation Tool at https://wave.webaim.org/
-9. JS Lint (a validator for JavaScript) at https://www.jslint.com/
+1. Free Pik image for Navigation Bar - happy monkey cartoon character by Brgfx at www.freepik.com
+2. Bootstrap 5.3.8 version library utlized.
+3. Figma software used to create the wireframes.
+4. Free Pik images.
+5. Google Fonts - orbitron, DynaPuff at https://fonts.google.com/
+6. Fontawesome Kit at https://fontawesome.com/
+7. The W3C CSS Validation service at https://jigsaw.w3.org/css-validator/
+8. The W3 Nu HTML Checker at https://validator.w3.org/nu/
+9. Wave Web Accessibility Evaluation Tool at https://wave.webaim.org/
+10. JS Lint (a validator for JavaScript) at https://www.jslint.com/
 
 ### Content
 
