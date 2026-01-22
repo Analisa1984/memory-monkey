@@ -34,14 +34,15 @@
 
 1. HTML
 2. CSS
-3. JavaScript
+3. JavaScript (ECMAScript)
 4. Bootstrap version 5.3.8 Library - for navigation bar and other body elements and class implementation for styling.
 5. Figma software was used to create the wireframes at https://www.figma.com
-6. Google Fonts at https://fonts.google.com/
+6. Google Fonts - orbitron, DynaPuff at https://fonts.google.com/
 7. Fontawesome Kit at https://fontawesome.com/
 8. The W3C CSS Validation service at https://jigsaw.w3.org/css-validator/
 9. The W3 Nu HTML Checker at https://validator.w3.org/nu/
 10. Wave Web Accessibility Evaluation Tool at https://wave.webaim.org/
+11. JS Lint (a validator for JavaScript) at https://www.jslint.com/
 
 ## Links Used
 
@@ -52,15 +53,45 @@
 - Low Accessibility reports from check initially done
   ![Low Accessibility](assets/images/screenshots-validators/mm-previous-validator-checks/mm-accessibility-checker-failed.png)
 
+- Errors in the HTML Validator (discussed below - section elements in the home page have missing h2- h6 elements, missing aria labels in buttons)
+
+- Errors in Accessibility Checks (contrast difference not sufficient, no text in the fontawesome buttons)
+
+- No errors or warnings in the CSS Validation service done.
+
+- Warnings in Javascript (continues to be unresolved)
+
 ## Fixed (Sections repaired based on recommendations from the accessibity checkers, HTML validators):
 
 HTML Validator Errors:
 
-- In the Home page, the section tags returned an error as there were no h2-h6 elements.
-  This was fixed by replacing the section elements with div elements.
+- SECTION USED WITH NO h2 - h6 ELEMENTS (SINDEX PAGE)
+  In the Home page, the section tags returned an error as there were no h2-h6 elements.
+  This was fixed by replacing the section elements with div elements (as per the Nu HTML Checker advice).
 
-- In the Game page, there were 30 errors which all came from the buttons not having any aria labels.
-  The buttons were all created in Javascript. However, this showed up as an HTML Validation error as the buttons are HTML tag elements. This was rectified by
+- NO ARIA LABELS ON FONTAWESOME BUTTONS (GAME PAGE)
+  In the Game page, there were 30 errors which all came from the buttons not having any aria labels.
+  The buttons were all created in Javascript. However, this showed up as an HTML Validation error as the buttons were added by innerHTML and are HTML tag elements. This was rectified by adding the aria-labels attribute.
+
+- TRAILING SLASHES ON VOID ELEMENTS (WARNING NOT ERROR)
+  Prior to HTML 5, in older versions of HTML the back slashes were used on void elements. However, this is no longer required and it can react with attributes (as per the warning message). In VS Code, the formatting tool I personally use is prettier format. This formatting tool automatically adds the trailing slashes on the elements that require no closing tags. Also, the attributes are not interacting with the void elements. As this has showed as only a warning and continues to run as intended, so changes are required for now.
+
+Accessibility Errors:
+
+- NO TEXT INPUT ON FONTAWESOME BUTTONS (GAME PAGE)
+  Despite the Game page buttons all having aria-labels, 30 errors again was reported due to the fontawesome buttons not having any text written in the buttons. Eventhough, there were symbols on each fontawesome button displayed and there were aria-labels for each of the button, there needed to be text displayed. This error was resolved by adding a span element within the fontawesome icon of the button. The span tag then had a class of font which was used in css to display none. For accessibility checks this was sufficient as there were already aria-labels and the buttons on display had a meaning to the user. Therefore, no additional accessibility help was required at this time.
+
+  -SCOREBOARD DIV ELEMENT (GAME PAGE) CONTRAST CHECK FAILED.
+  As per guidelines the background color of the scoreboard was not producing a sufficient contrast to meet guideline requirements of WGAC 2.0. The recommended color change was implemented to meet accessibility guidelines in terms on contrast differences.
+
+- THERE WERE NO CSS ERRORS OR WARNINGS
+
+- JS Lint showed several warnings on the Javascript code written
+
+  These warnings included: messy whitespace, let, for, long comments, variables, this.
+
+  To reduce the warnings which were acceptable, filter was added to the JS lint to remove some warning which were acceptable such as: messy whitespace, long, variable, this. After the filters were added the JS lint still produced warning which included using let in the for loop.
+  Regardless, the Javascript was checked throughout the coding process and tested in the console of the web developer tools of the webpage. The JavaScript code does work and so far has not cause a hindrance in other programs. It is unclear why these warnings came up as most of these warnings tend to be present in normal code writing.
 
 ## Results from Final Testing
 
@@ -82,6 +113,15 @@ HTML Validator Errors:
 - CSS Validator Check using The W3C Validation CSS Service - for Game Page.
   ![CSS Validation check passed for Game Page](assets/images/screenshots-validators/mm-last-validator-checks/css-validator-game-page.png)
 
+- JavaScript Validator using JS Lint (no filters)
+  ![JavaScript validation without any filters](assets/images/screenshots-validators/mm-last-validator-checks/mm-jslint.png)
+
+- JavaScript Validator using JS Lint (no filters)
+  ![JavaScript validation  warnings without any filters](assets/images/screenshots-validators/mm-last-validator-checks/mm-jslint-warnings.png)
+
+- JavaScript Validator using JS Lint (with filters)
+  ![JavaScript validation with filters](assets/images/screenshots-validators/mm-last-validator-checks/mm-jslint-filter.png)
+
 ### Manual Testing
 
 ## Automated Testing
@@ -102,7 +142,7 @@ Deployed to GitHub Pages on 21st January 2026.
 3. Install VS Code on your machine `https://code.visualstudio.com/download`
 4. From the file menu `Open Folder` and select where you want to store the code
 5. Open VS code, in the terminal window and open a bash terminal. This will be availible in Windows Mac and Linux
-6. Clone the repository using `git clone https://github.com/Analisa1984/memory-monkey.git` (no login will be required as meemory monkey is a public repository)
+6. Clone the repository using `git clone https://github.com/Analisa1984/memory-monkey.git` (no login will be required as memory monkey is a public repository)
 
 - Deploying via Github pages
   Creating a publicly accessible website:
@@ -113,8 +153,6 @@ Deployed to GitHub Pages on 21st January 2026.
 4. Change to deploy branch and select `Main`
    ![Image of settings page](assets/images/deploment/github-settings-deployment.png)
 5. Push changes to the main branch, this will automatically deploy the website.
-
-## How to clone the project
 
 ## The Design of Memory Monkey and How to play (use the product):
 
@@ -128,8 +166,22 @@ Deployed to GitHub Pages on 21st January 2026.
 
 ## Issues:
 
-## Limitations and Futute
+## Limitations and Future Development:
+
+Memory Monkey is a fun game that allows the user to play a memory game of 10 rounds. However, as the game is there can be room for further imporvements such as :
+
+- For future development, a hint button can be added which shows the user the card(s) that was initially shown but maybe of a shorter period of time.
+- There can be an End Game button so that the user can choose to leave and quit the game at any time.
+- to make the game more challenging there can be a timer option so that the user has to input his/her options in a specified amount of time.
+- There can be an option for the user to select how many rounds they would like to have.
+- There can be a storage area built so that game remembers their past scores so that a user may want to improve from their last score.
+- There can be an option for multiple user/ players to play the game.
+- This product has not had user acceptance testing and this would be advisable for regular business projects.
 
 ## Acknowledgements
+
+1. God Almighty
+2. Code Institute - Lecture material, classes.
+3. FreePik for images used in the game (monkey)
 
 ### Thank you for reviewing this product!
