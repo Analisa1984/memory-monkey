@@ -7,19 +7,18 @@ let gameStage = 0;
 let gameScore = 0;
 
 
-
+// this is not the fontawesome buttons yet, but it is an array of the text of the buttons to be used
   const gameArray = [
     "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "star",
     "heart","smile", "moon", "sun", "leaf", "tree", "dove", "frog", "house"
   ];
-  console.log(gameArray);
-
+  
+  //once DOM Content Loaded add event listener to buttons for click and then function
   document.addEventListener("DOMContentLoaded", function() {
  
   buildButtons();
 
- 
   let submitButton = document.getElementById("user-entry-final");
   submitButton.addEventListener ("click", checkAnswer);
 
@@ -32,16 +31,23 @@ let gameScore = 0;
   let newGameButton = document.getElementById("new-game");
   newGameButton.addEventListener ("click", newGame);
 
+
+  
   let fontawesomeButtons = document.getElementsByClassName("fa-solid");
   for(let i=0; i <fontawesomeButtons.length; i++ ) {
        fontawesomeButtons[i].addEventListener ("click", addToUserAnswer);
     }
 });
+ 
 
+/**
+ * this function is building all the fontawesome buttons on the display on game page 
+ */
     function buildButtons () {
       let html = "<div>";
       let fa = ""; 
-
+      
+      // this process is to put the symbols onto the buttons else it would be text only       
       for (let i = 0; i < gameArray.length; i++) {
        if (i <= 9) { 
         fa = i; 
@@ -49,6 +55,7 @@ let gameScore = 0;
         fa = gameArray[i];
       }
 
+      // this is wrapping the icon elements in button with id, and adding span element.
       html += `<button id="${gameArray[i]}"><i button-name="${gameArray[i]}" class="fa-solid fa-${fa}" aria-label="${fa}" data-type="${gameArray[i]}"></i><span class=font>${fa}</span></button>`;
 
       //split buttons into rows of 6
@@ -73,7 +80,7 @@ let gameScore = 0;
     function initialMemoryItems() {
       // empty the array first
       memoryArray = [];
-      //fill array with 3 random chosen items from the gameArray
+      //fill array with 10 random chosen items from the gameArray
       for (let i = 0; i < maxMemoryItems; i++) {
         memoryArray.push(gameArray[Math.floor(Math.random() * gameArray.length)]);
       }
@@ -106,7 +113,7 @@ let gameScore = 0;
     showMemoryChallenge();
     showUserEntry(true);
 
-    //disable the start game button
+    //disable the start game button once the start game button is clicked
     document.getElementById("start-game").disabled = true;
     }
 
@@ -116,7 +123,6 @@ let gameScore = 0;
   function newGame() {
     if (confirm("Are you ready for a new game?")) {
       startGame();
-
     }
   }
 
@@ -157,8 +163,6 @@ let gameScore = 0;
     randomItemsDisplay.innerHTML = " "; 
   }, 3000);
   }  
-  
-
   /**
    * display user's answer choice
    */
@@ -169,17 +173,13 @@ let gameScore = 0;
     btn = document.getElementById(userEntryArray[i]);
     btnHTML += `<button>${btn.innerHTML}</button>`;
     }
-    document.getElementById('user-reply').innerHTML = btnHTML;
-   
+    document.getElementById('user-reply').innerHTML = btnHTML; 
   }
-
-
 
   /**
    * add delete function so user can remove their selection of card 
    * e.g. if wrong button was clicked by user or they want to change their choice of card.
    */
-
    function deleteCard() {
     userEntryArray.pop();
     showUserEntry();
@@ -190,15 +190,12 @@ let gameScore = 0;
    * (make the answer string allowed by user input a maximum of 3)
    * update the display of user answers
    */
-
    function addToUserAnswer() {console.log("pushing");
     if (userEntryArray.length < maxMemoryItems) {
       userEntryArray.push(this.getAttribute("data-type")); 
       showUserEntry();
     }
    }
-  
-
    /**
     * check to see if the user has enetered the correct random card shown
     */
@@ -236,15 +233,12 @@ let gameScore = 0;
        }
       }
   }
- 
-
-  /**
+ /**
    * check to see if game is over (has 3 rounds been completed.)
    */
  function isGameOver() {
    return (gameStage >= maxMemoryItems);
  }
-
  /**
   * game is over so ask if the user wants a new game. 
   */
@@ -257,6 +251,5 @@ let gameScore = 0;
   let submit = document.getElementById("user-entry-final");
   submit.disabled = true; 
   }
-  
  }
   
