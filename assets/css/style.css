@@ -1,3 +1,4 @@
+/* Change background color of bootstrap navbar */
 .navbar {
   background-color: rgb(193, 200, 207) !important;
 }
@@ -6,12 +7,12 @@
 img {
   mix-blend-mode: multiply;
 }
-
+/* increase monkeys size in the navbar */
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
-
+/* change background of the body in both home page and game page for uniformity */
 body {
   background-color: burlywood;
 }
@@ -104,12 +105,12 @@ button {
   margin-top: 3vw;
 }
 
-/* styles applied to the span element in fontawesome buttons to pass accessibility checks but text not needed as the buttons have symbols display */
+/* styles applied to the span element in fontawesome buttons to pass accessibility checks because text is not needed as the buttons have symbols display */
 .font {
   display: none;
 }
 
-/* styling applied to border around the game */
+/* styling applied to green border around the game */
 .main {
   margin: 5vw;
   padding: 2vw;
