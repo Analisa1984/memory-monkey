@@ -128,6 +128,26 @@ Accessibility Errors:
 
 ## Final Product
 
+This product (Memory Monkey game) was designed to meet the goals of both the business as well as the potential users.
+
+- Smaller devices such as mobile phones - the Home Page:
+  ![mobile](assets/images/final-product/mobile-home-page.png)
+
+- Smaller devices such as mobile phones - the Game Page:
+  ![mobile](assets/images/final-product/mobile-game-page.png)
+
+- Intermediate devices such as Ipad or tablets - the Home Page:
+  ![Ipad](assets/images/final-product/tablet-home-page.png)
+
+- Intermediate devices such as Ipad or tablets - the Game Page:
+  ![Ipad](assets/images/final-product/tablet-game-page.png)
+
+- Medium to Large sized devices such as laptop - the Home Page:
+  ![Laptop](assets/images/final-product/home-page-laptop.png)
+
+- Medium to Large sized devices such as laptop - the Game Page:
+  ![Laptop](assets/images/final-product/game-page-laptop.png)
+
 ## Business Goals & User Stories:
 
 ## Deployment
