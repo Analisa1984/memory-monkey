@@ -12,6 +12,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Add border under the active links in the navigation bar */
+.active {
+  border-bottom: 3px solid #e30000;
+}
+
 /* change background of the body in both home page and game page for uniformity */
 body {
   background-color: burlywood;

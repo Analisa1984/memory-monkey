@@ -35,7 +35,8 @@
 1. HTML
 2. CSS
 3. JavaScript (ECMAScript)
-4. Bootstrap version 5.3.8 Library - for navigation bar and other body elements and class implementation for styling.
+4. Bootstrap version 5.3.8 Library - for navigation bar and other body elements and class
+   implementation for styling.
 5. Figma software was used to create the wireframes at https://www.figma.com
 6. Google Fonts - orbitron, DynaPuff at https://fonts.google.com/
 7. Fontawesome Kit at https://fontawesome.com/
@@ -45,6 +46,13 @@
 11. JS Lint (a validator for JavaScript) at https://www.jslint.com/
 
 ## Links Used
+
+Internal Links:
+
+- The Play link in the Navigation Bar goes to the Game page
+- The Play Now button on the Home Page goes to the Game Page
+- The Home Link in the Navigation bar goes to the Home Page
+- The Monkeys on the Navigation Bar goes to the Home Page.
 
 ## Media Used
 
@@ -84,7 +92,7 @@ Accessibility Errors:
 - NO TEXT INPUT ON FONTAWESOME BUTTONS (GAME PAGE)
   Despite the Game page buttons all having aria-labels, 30 errors again was reported due to the fontawesome buttons not having any text written in the buttons. Eventhough, there were symbols on each fontawesome button displayed and there were aria-labels for each of the button, there needed to be text displayed. This error was resolved by adding a span element within the fontawesome icon of the button. The span tag then had a class of font which was used in css to display none. For accessibility checks this was sufficient as there were already aria-labels and the buttons on display had a meaning to the user. Therefore, no additional accessibility help was required at this time.
 
-  -SCOREBOARD DIV ELEMENT (GAME PAGE) CONTRAST CHECK FAILED.
+- SCOREBOARD DIV ELEMENT (GAME PAGE) CONTRAST CHECK FAILED.
   As per guidelines the background color of the scoreboard was not producing a sufficient contrast to meet guideline requirements of WGAC 2.0. The recommended color change was implemented to meet accessibility guidelines in terms on contrast differences.
 
 - THERE WERE NO CSS ERRORS OR WARNINGS
@@ -179,7 +187,7 @@ Deployed to GitHub Pages on 21st January 2026.
 
 ## The Design of Memory Monkey and How to play (use the product):
 
-This product is a memory game aimed at individuals aged 10 years and over. This game has 2 pages the Home page and the Game page. Both pages have a Navigation Bar located at the top where the users will be greeted byt the 2 happy monkeys of Memory Monkey which is the logo and clicking on them leads to the Home Page. Next to the Monkey are 2 links which are directly visible on larger screen sizes but in mobile devices, the links are in a burger menu. These 2 links are the Home link and the Play link.
+This product is a memory game aimed at individuals aged 10 years and over. This game has 2 pages the Home page and the Game page. Both pages have a Navigation Bar located at the top where the users will be greeted byt the 2 happy monkeys of Memory Monkey which is the logo and clicking on them leads to the Home Page. Next to the Monkey are 2 links which are directly visible on larger screen sizes but in mobile devices, the links are in a burger menu. These 2 links are the Home link and the Play Now link.
 
 This game is aimed at individuals who would like to have some challenging fun during their leisure time. The Home Page has an About Us section as well as the instructions on how to play the game. The Call to action button, which is the play button on the Home page and the play link on the Navigation bar are readily visible and easy to get to.
 
