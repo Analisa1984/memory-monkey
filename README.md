@@ -137,6 +137,12 @@ Accessibility Errors:
 
 ## Automated Testing
 
+There are two approaches to developing a program, namely: Behavior Driven Development as well as Test Driven Development. In Behavior Driven Development, each aspect of the program is MANUALLY TESTED. Whereas, test driven development is an automated testing procedure whereby tests are created for each funtional aspect of the program created.
+
+For automating testing, a nope package manager (npm) with first have to be installed and then initialised on your code editor such as VS studio. Once inititalied, a separate testing folder is created to write the tests for the functions you write in the program you want. To test the function, you export the function. The tests are done before the functions are written. The first test will fail as the funtion does not yet exist.
+
+Theoretically, for Memory Monkey, if automated testing were to be done, the tests that would be done for the startGame, deleteCard, initialMemoryItems, buildbuttons,
+
 ## Final Product
 
 This product (Memory Monkey game) was designed to meet the goals of both the business as well as the potential users.
