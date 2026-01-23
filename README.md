@@ -2,6 +2,27 @@
 
 ## Table of Contents
 
+1. [About](#about)
+2. [Business Goals](#business-goals)
+3. [User Stories](#user-stories)
+4. [Wireframes](#wireframes)
+5. [Languages and Technologies Used](#languages-and-technologies-used)
+6. [Links Used](#links-used)
+7. [Results from initial testing](#results-from-initial-testing)
+8. [Fixed](#fixed-sections-repaired-based-on-recommendations-from-the-accessibity-checkers-html-validators)
+9. [Results from Final Testing](#results-from-final-testing)
+10. [Manual Testing](#manual-testing)
+11. [Responsive Testing](#responsive-testing)
+12. [Automated Testing](#automated-testing)
+13. [Final Product](#final-product)
+14. [Business Goals and User Stories Met](#business-goals--user-stories-met)
+15. [Deployment](#deployment)
+16. [Design of Memory Monkey and How to Play](#the-design-of-memory-monkey-and-how-to-play-use-the-product)
+17. [Issues](#issues)
+18. [Limitations and Future Development](#limitations-and-future-development)
+19. [References](#references)
+20. [Acknowlegements](#acknowledgements)
+
 ## About
 
     This product is a product designed using languages such as: HTML, CSS and Javascript. This product is designed to be a memory game whereby, the user (aged 10 years and older) would be shown a sequence of items flashed briefly. The user has to then replicate the objects shown in the correct order to proceed to the next level. The first sequence starts with only one object. Each round the proceeds, the sequence has an additional object shown. Therefore, the first round has one object, the second round has two objects, the third round has three objects. For each object correctly stated, 10 points are given. Once the user enters a wrong object, 2 points are removed from the score ad the user is prompted to enter a choice again and then submit the answer.
@@ -397,6 +418,8 @@ In the game, the Round is displayed on top and the score board is in red with a 
 The instructions let the user know that the user has to replicate the answer exactly as it was shown. To enter an answer selection, the user would have to click or tap on the screen (if the user is using a touch screen device)
 
 ## Issues:
+
+1. Ideally no fontawesome buttons should be able to function unless the game has started first. The buttons can be disabled before the game has started.
 
 ## Limitations and Future Development:
 
