@@ -13,6 +13,7 @@
     3. To provide a memory game that is easy to use, provides a challenge and fun.
     4. To provide a game that users can play from their phones, tablets, laptops and PC devices.
     5. Provide online social links to community.
+    6. Provide a product where the information is not clustered and easy to navigate.
 
 ## User Stories
 
@@ -26,7 +27,7 @@
     8. I would like to see my score throughout the game.
     9. I would like to know the round of the game.
     10. I would like to see what i am entering as my choice for game answer.
-    11. i would like option to delete my answer choice.
+    11. I would like option to delete my answer choice.
     12. I would like to join the online social media community of other memory monkey gamers.
     13. I would like to contact the admin staff to report bugs.
 
@@ -144,6 +145,93 @@ Accessibility Errors:
 
 ### Manual Testing
 
+Manual testing - The various parts of the website was checked such as the navigation bar, links, buttons. The various parts were also manually tested on mobile and tablet sizes using inspect and responsiveness checks on the page.
+
+### Table 1: Home Page testing
+
+| Homepage elements            | Results                                  |
+| ---------------------------- | ---------------------------------------- |
+| **Navigation Bar**           | **tested**                               |
+| Memory Monkey Logo           | Goes to home page                        |
+| Memory Monkey (title)        | Goes to Home Page                        |
+| Home link                    | Goes to Home Page                        |
+| Play Now link                | Goes to Game Page                        |
+| **Body Elements**            | **tested**                               |
+| About Us (detail element)    | Drops down with information when clicked |
+| How to Play (detail element) | Drops down with information when clicked |
+| Play Now Button              | Goes to the Game Page once clicked       |
+
+### Table 2: Game Page testing
+
+| Game Page elements              | Results                                |
+| ------------------------------- | -------------------------------------- |
+| **Navigation Bar**              | **tested**                             |
+| Memory Monkey Logo              | Goes to home page                      |
+| Memory Monkey (title)           | Goes to Home Page                      |
+| Home link                       | Goes to Home Page                      |
+| Play Now link                   | Goes to Game Page                      |
+| **Body Elements**               | **tested**                             |
+| Welcome Message                 | present and centered                   |
+| Round                           | present and centered                   |
+| Score                           | present in red oval with white border  |
+| Random card area                | present and ready for card to be shown |
+| (fontawesome elements)          | (what appears)                         |
+| 0                               | 0                                      |
+| 1                               | 1                                      |
+| 2                               | 2                                      |
+| 3                               | 3                                      |
+| 4                               | 4                                      |
+| 5                               | 5                                      |
+| 6                               | 6                                      |
+| 7                               | 7                                      |
+| 8                               | 8                                      |
+| 9                               | 9                                      |
+| A                               | A                                      |
+| B                               | B                                      |
+| C                               | C                                      |
+| D                               | D                                      |
+| E                               | E                                      |
+| F                               | F                                      |
+| G                               | G                                      |
+| H                               | H                                      |
+| I                               | I                                      |
+| J                               | J                                      |
+| Star (symbol)                   | Star (symbol)                          |
+| Heart (symbol)                  | Heart (symbol)                         |
+| Smiley Face(symbol)             | Smiley Face(symbol)                    |
+| Moon (symbol)                   | Moon (symbol)                          |
+| Sun (symbol)                    | Sun (symbol)                           |
+| Leaf (symbol)                   | Leaf (symbol)                          |
+| Bell (symbol)                   | Bell (symbol)                          |
+| Bird (symbol)                   | Bird (symbol)                          |
+| Frog (symbol)                   | Frog (symbol)                          |
+| House (symbol)                  | House (symbol)                         |
+| Submit (if there is input)      | Submits the answer user enters         |
+| Submit (if there is no input)   | Please start a new game first          |
+| Delete (if there is input)      | deletes the last entered item          |
+| Delete (if there is no input)   | no response                            |
+| New Game                        | Are you ready for a new game?          |
+| Start Game                      | Memorize this (random item)            |
+| Start Game (while game started) | Nothing happens                        |
+
+## Responsive Testing:
+
+### Table 1. Responsiveness of the Home Page
+
+| Home Page      | Results                                                                                                                                         |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Navigation Bar | All visible and functional on medium an large screens as links, Memory Monkey logo                                                              |
+|                | On small devices, the navigation link appears as a burger menu (from 992px and lower) which when clicked, has a dropdown menu with the options. |
+| Body section   | On all screens sizes, the welcome section is visible in a green border and all is maintained to 309px.                                          |
+
+### Table 2. Responsiveness of the Game Page
+
+| Game Page      | Results                                                                                                                                                                                                             |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Navigation Bar | All visible and functional on medium an large screens as links, Memory Monkey logo                                                                                                                                  |
+|                | On small devices, the navigation link appears as a burger menu (from 992px and lower) which when clicked, has a dropdown menu with the options.                                                                     |
+| Body section   | On all screens sizes, the welcome section and game is visible in a green border and all is maintained to 309px. The fontawesome buttons remain in rows of 6 till about 309 and all text in buttons hold till 309px. |
+
 ## Automated Testing
 
 There are two approaches to developing a program, namely: Behavior Driven Development as well as Test Driven Development. In Behavior Driven Development, each aspect of the program is MANUALLY TESTED. Whereas, test driven development is an automated testing procedure whereby tests are created for each funtional aspect of the program created.
@@ -183,6 +271,60 @@ This product (Memory Monkey game) was designed to meet the goals of both the bus
   ![Laptop](assets/images/final-product/game-page-laptop.png)
 
 ## Business Goals & User Stories Met:
+
+Business Goal #1: To increase online awareness of Memory Monkey game through search engine optimization (SEO)
+&
+User Story #2: I would like a memory game that is online.
+User Stories #6: I would like an easy searchable game to play.
+
+Call to Action is the meta tag with the description and the values needed to have a good search engine optimization as seen below:
+
+![meta description](assets/images/user-stories-met/index-code-meta-description.png)
+
+---
+
+Business Goal # 3: To provide a memory game that is easy to use, provides a challenge and fun.
+User Stories #1: I would like to have a game that I know how to play where the rules are known.
+
+Call to Action is the How to Play section in the Home Page in the drop down information
+![How to Play](assets/images/user-stories-met/index-how-to-play.png)
+
+---
+
+Business Goal # 4: To provide a game that users can play from their phones, tablets, laptops and PC devices.
+User Stories #3: I would like a memory game that I can play easily from my phone or tablet.
+
+The Call to Action here would be the design of the Memory monkey Game that was made responsive on various screen sizes. Please refer to the Final Product section of this readme file.
+
+---
+
+Business Goal # 3: To provide a memory game that is easy to use, provides a challenge and fun.
+User Stories #7: I would like to use a game where I can see my input in the memory game.
+User Stories #8: I would like to see my score throughout the game.
+User Stories #9: I would like to know the round of the game.
+User Stories #10: I would like to see what i am entering as my choice for game answer.
+User Stories #11: I would like option to delete my answer choice.
+
+The Call to Action are in various screenshots highlighted as seen below:
+![User Entry Area to put their Answers](assets/images/user-stories-met/play-game-user-input-area.png)
+![Score Area](assets/images/user-stories-met/play-game-scoreboard-area.png)
+![Rounds area](assets/images/user-stories-met/play-game-round.png)
+![Delete option](assets/images/user-stories-met/play-game-delete.png)
+
+---
+
+Business Goal # 3: To provide a memory game that is easy to use, provides a challenge and fun.
+User Stories #5: I would like a bit of a challenge in the memory game.
+
+The Home page provides information on the game and a how to play section both available in the homepage. (See more in the Product design section)
+
+Business Goal #6: Provide a product where the information is not clustered and easy to navigate.
+User Stories #4: I would like a game that is fun, easy to play and navigate.
+
+![Easy to find PLAY NOW](assets/images/user-stories-met/index-play-now.png)
+
+The Memory Monkey game product was designed in such a way that thought was given to the layout. The paragraphs added to the homepage are neatly tucked away unless needed, in which case the user clicks on it and the information drops down and return away until needed again.
+Also, a navigation bar was added on top of both Home page and Game page to allow to easily get to the relevant pages. The backgrounds of the body element as well as the green border remain on both pages, to bring uniformity to the product. Also, the call to action button and navbar link (PLAY NOW) are very visible and reachable. (See more in Product Design section)
 
 ## Deployment
 
@@ -227,7 +369,17 @@ After the navigation bar at the top, the user is greeted by a Welcome to Memory 
 
 score board - The score is white and it is encompassed in a red oval with a white border. This remains the same shape with scaling to various device sizes. The red background brings some excitement as it is a game and draws the user to the score easily.
 
-Game input area - The Game input area was clearly defined by adding a div and placing a height. This prevented the other elements from shifting up and down after the randomized item disappeared.
+Game input area (area between the scoreboard and the fontawesome buttons) - The Game input area was clearly defined by adding a DIV (.game-area) and placing a height. This prevented the other elements from shifting up and down after the randomized item disappeared.
+
+The randomized items(s) then appear in the game area for a duration of 3 seconds after which it then disappears.
+
+Following the game area, the user input area is seen by the user and remains present throughout. The inpupt area is 5 rows of 6 fontawesome buttons that has a key board appearance. This is the layout for the user input, the keys of the keyboard do not have any effect on user input and so only the fontawesome buttons can be used for input.
+
+Interactivity - all buttons have a hover effect. the fontawesome buttons are green with a white background but once the mouse hovers over it there is a gold brown background color. Also the Start Game and New Game button change from green text with white background to gold text with black background. The Submit and Delete button change from green text with white backgrounds to red text with black backgrounds. When playing a game, it makes it more exciting when the user realizes that things change when navigating the page. The hover effect also alerts the user to the changes happening when moving their mouse or tapping their device. Hovering effects for games also reduces the monotony which can come across as dull and boring which would not be appealing for the user to return to play the game.
+
+Following the fontawesome buttons arranged like a keyboard is the user reply area. This user reply area only become apparant to the user once the fontawesome buttons are clicked or pressed. The user has the opportunity to see their answer choices as they may have pressed the wrong button by accident and can change their answer.
+
+Next are the Start Game button, Delete button, Submit button and New Game button which does what the labels say.
 
 This game is aimed at individuals who would like to have some challenging fun during their leisure time. The Home Page has an About Us section as well as the instructions on how to play the game. The Call to action button, which is the play button on the Home page and the play link on the Navigation bar are readily visible and easy to get to.
 
@@ -256,8 +408,6 @@ The instructions let the user know that the user has to replicate the answer exa
 8. Wave Web Accessibility Evaluation Tool at https://wave.webaim.org/
 9. JS Lint (a validator for JavaScript) at https://www.jslint.com/
 10. Chrome developer tools, Inspector, to manually check various functions and javascript elements.
-
-### Content
 
 ## Issues:
 
