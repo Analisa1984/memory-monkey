@@ -47,20 +47,31 @@ let gameScore = 0;
       let html = "<div>";
       let fa = ""; 
       
-      // this process is to put the symbols onto the buttons else it would be text only       
+      // this process is creating fa -->  1 - 9 and the other fa with text values after 9.      
       for (let i = 0; i < gameArray.length; i++) {
+        
+       // recall that after 9, array goes to letters and miscellanoues things so,
+       //  need to set fa variable to be the same as gameArray value else we couldve 
+       // fa = i  for all values
        if (i <= 9) { 
         fa = i; 
       } else {
         fa = gameArray[i];
       }
 
-      // this is wrapping the icon elements in button with id, and adding span element.
+      // this is wrapping each fa in button (with class fa-solid) and adding span element
+      //here the icon is created and wrapped in a button
+      //span was added for accesibility reasons for text (explained in readme accesibility section)
       html += `<button id="${gameArray[i]}"><i button-name="${gameArray[i]}" class="fa-solid fa-${fa}" aria-label="${fa}" data-type="${gameArray[i]}"></i><span class=font>${fa}</span></button>`;
 
-      //split buttons into rows of 6
+    //split buttons into rows of 6 buttons per row - there are 30 buttons currently
+    // recall that i starts at 0 so need to add 1 to i to remove possibility of infinity value and 1
+    // formula adds 1 to i and checks if divisible by 6 with no remainder
+    // every 6 buttons are wrapped in a div and a new div is started for next row of 6 buttons
 
       if ((i + 1) > 1 && (i + 1) % 6 == 0) {
+
+        // this is to add each row into a div
         html += "</div>";
         if (i < gameArray.length) {
           html += "<div>";
@@ -69,13 +80,13 @@ let gameScore = 0;
 
     }
 
-      // write icons into the div
+      // place the fontawesome buttons (now in rows of 6 in DIVS) into the fontawesome div
       let fontAwesome = document.getElementById("fontAwesome");
       fontAwesome.innerHTML = html;
       }
 
       /**
-       * Randomly generate a numebr (maxMemoryItems) of items to remember 
+       * Randomly generate a number (maxMemoryItems) of items to remember 
        */
     function initialMemoryItems() {
       // empty the array first
@@ -166,7 +177,7 @@ let gameScore = 0;
   /**
    * display user's answer choice
    */
-  function showUserEntry() { console.log("Hello World");
+  function showUserEntry() {
     let btnHTML = "";
     let btn = "";
     for (let i=0; i < userEntryArray.length; i++) {
@@ -190,7 +201,7 @@ let gameScore = 0;
    * (make the answer string allowed by user input a maximum of 3)
    * update the display of user answers
    */
-   function addToUserAnswer() {console.log("pushing");
+   function addToUserAnswer() {
     if (userEntryArray.length < maxMemoryItems) {
       userEntryArray.push(this.getAttribute("data-type")); 
       showUserEntry();
