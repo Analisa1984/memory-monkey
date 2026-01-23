@@ -179,6 +179,23 @@ Deployed to GitHub Pages on 21st January 2026.
 
 ## The Design of Memory Monkey and How to play (use the product):
 
+This product is a memory game aimed at individuals aged 10 years and over. This game has 2 pages the Home page and the Game page. Both pages have a Navigation Bar located at the top where the users will be greeted byt the 2 happy monkeys of Memory Monkey which is the logo and clicking on them leads to the Home Page. Next to the Monkey are 2 links which are directly visible on larger screen sizes but in mobile devices, the links are in a burger menu. These 2 links are the Home link and the Play link.
+
+This game is aimed at individuals who would like to have some challenging fun during their leisure time. The Home Page has an About Us section as well as the instructions on how to play the game. The Call to action button, which is the play button on the Home page and the play link on the Navigation bar are readily visible and easy to get to.
+
+The About section lets user know that this is a memory game that has a total of 10 rounds. In this game the user with be shown a series of random cards.
+1st round --> 1 item shown,
+2nd round --> 2 items shown,
+3rd round --> 3 items shown,
+.
+.
+.
+10th round --> 10 items shown
+
+In the game, the Round is displayed on top and the score board is in red with a white cirle presnt throughout the game. As a user plays, the maximum number of points possible to gai is 10 points per round. With a maximum of 100 total points to get for 10 rounds. Each round shows the items within 3 seconds. After the 3 seconds are completed, the items disappear.
+
+The instructions let the user know that the user has to replicate the answer exactly as it was shown. To enter an answer selection, the user would have to click or tap on the screen (if the user is using a touch screen device)
+
 ## References
 
 1. Free Pik image for Navigation Bar - happy monkey cartoon character by Brgfx at www.freepik.com
@@ -206,6 +223,7 @@ Memory Monkey is a fun game that allows the user to play a memory game of 10 rou
 - There can be an option for the user to select how many rounds they would like to have.
 - There can be a storage area built so that game remembers their past scores so that a user may want to improve from their last score.
 - There can be an option for multiple user/ players to play the game.
+- Future development can be to add a Contact Us section as well as social media Join Us section.
 - This product has not had user acceptance testing and this would be advisable for regular business projects.
 
 ## Acknowledgements
