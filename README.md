@@ -234,7 +234,7 @@ Manual testing - The various parts of the website was checked such as the naviga
 
 ## Automated Testing
 
-There are two approaches to developing a program, namely: Behavior Driven Development as well as Test Driven Development. In Behavior Driven Development, each aspect of the program is MANUALLY TESTED. Whereas, test driven development is an automated testing procedure whereby tests are created for each funtional aspect of the program created.
+There are two approaches to developing a program, namely: Behavior Driven Development as well as Test Driven Development. In Behavior Driven Development, each aspect of the program is MANUALLY TESTED. Whereas, test driven development is an automated testing (eg Jest) procedure whereby tests are created for each funtional aspect of the program created.
 
 For automating testing, a node package manager (npm) with first have to be installed and then initialised on your code editor such as VS studio. Once inititalied, a separate testing folder is created to write the tests for the functions you write in the program you want. To test the function, you export the function. The tests are done before the functions are written. The first test will fail as the funtion does not yet exist.
 
@@ -396,19 +396,6 @@ In the game, the Round is displayed on top and the score board is in red with a 
 
 The instructions let the user know that the user has to replicate the answer exactly as it was shown. To enter an answer selection, the user would have to click or tap on the screen (if the user is using a touch screen device)
 
-## References
-
-1. Free Pik royaly free image for Navigation Bar - happy monkey cartoon character by Brgfx at www.freepik.com
-2. Bootstrap 5.3.8 version library utlized.
-3. Figma software used to create the wireframes for mobiles, tablets and laptops and larger devices.
-4. Google Fonts - orbitron, DynaPuff at https://fonts.google.com/
-5. Fontawesome Kit at https://fontawesome.com/
-6. The W3C CSS Validation service at https://jigsaw.w3.org/css-validator/
-7. The W3 Nu HTML Checker at https://validator.w3.org/nu/
-8. Wave Web Accessibility Evaluation Tool at https://wave.webaim.org/
-9. JS Lint (a validator for JavaScript) at https://www.jslint.com/
-10. Chrome developer tools, Inspector, to manually check various functions and javascript elements.
-
 ## Issues:
 
 ## Limitations and Future Development:
@@ -423,6 +410,19 @@ Memory Monkey is a fun game that allows the user to play a memory game of 10 rou
 - There can be an option for multiple user/ players to play the game.
 - Future development can be to add a Contact Us section as well as social media Join Us section.
 - This product has not had user acceptance testing and this would be advisable for regular business projects.
+
+## References
+
+1. Free Pik royaly free image for Navigation Bar - happy monkey cartoon character by Brgfx at www.freepik.com
+2. Bootstrap 5.3.8 version library utlized.
+3. Figma software used to create the wireframes for mobiles, tablets and laptops and larger devices.
+4. Google Fonts - orbitron, DynaPuff at https://fonts.google.com/
+5. Fontawesome Kit at https://fontawesome.com/
+6. The W3C CSS Validation service at https://jigsaw.w3.org/css-validator/
+7. The W3 Nu HTML Checker at https://validator.w3.org/nu/
+8. Wave Web Accessibility Evaluation Tool at https://wave.webaim.org/
+9. JS Lint (a validator for JavaScript) at https://www.jslint.com/
+10. Chrome developer tools, Inspector, to manually check various functions and javascript elements.
 
 ## Acknowledgements
 
