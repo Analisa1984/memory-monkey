@@ -373,7 +373,7 @@ Deployed to GitHub Pages on 21st January 2026.
 
 ## The Design of Memory Monkey and How to play (use the product):
 
-This product is a memory game aimed at individuals aged 10 years and over. This game has 2 pages the Home page and the Game page. - This product has a clear and simple design made easy for users to navigate.
+This product is a memory game aimed at individuals aged 10 years and over. This game has 2 pages the Home page and the Game page. - This product has a clear and simple design made easy for users to navigate. It is a mobile first responsive design product and works on other screen sizes. However, for larger screen sizes other than mobiles, the user would have to scroll down to seen the image and user input area clearly.
 
 Only 2 pages:
 There are 2 pages in Memory Monkey. The Home Page and the Game Page.
@@ -389,6 +389,8 @@ Game Page:
 After the navigation bar at the top, the user is greeted by a Welcome to Memory Monkey and Get ready to have fun statement as a welcome statement. Following this, the user sees the Round number, and score board which remains there throughout the entire game.
 
 score board - The score is white and it is encompassed in a red oval with a white border. This remains the same shape with scaling to various device sizes. The red background brings some excitement as it is a game and draws the user to the score easily.
+
+Next the user would have to scroll downwards to see the game input area.
 
 Game input area (area between the scoreboard and the fontawesome buttons) - The Game input area was clearly defined by adding a DIV (.game-area) and placing a height. This prevented the other elements from shifting up and down after the randomized item disappeared.
 
