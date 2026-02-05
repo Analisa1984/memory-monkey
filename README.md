@@ -11,6 +11,12 @@
 7. [Results from initial testing](#results-from-initial-testing)
 8. [Fixed](#fixed-sections-repaired-based-on-recommendations-from-the-accessibity-checkers-html-validators)
 9. [Results from Final Testing](#results-from-final-testing)
+
+- [Accessibility Checks for Home page and Game page](#accessibility-checks-for-homepage-and-game-page)
+- [HTML validation checks for Home Page and Game page](#html-validation-checks-for-homepage-and-game-page)
+- [CSS validation checks for Home Page and Game page](#css-validation-checks-for-homepage-and-game-page)
+- [Javascript JS Lint checks](#javascript-js-lint-checks)
+
 10. [Manual Testing](#manual-testing)
 11. [Responsive Testing](#responsive-testing)
 12. [Automated Testing](#automated-testing)
@@ -137,11 +143,15 @@ Accessibility Errors:
 
 ## Results from Final Testing
 
+# Accessibility Checks for Homepage and Game page
+
 - Accessibility Checker using Wave Web Accessibility Evaluation Tool for Home Page.
   ![Accessibility Check passed on Home Page](assets/images/screenshots-validators/mm-last-validator-checks/mm-game-page-accessibility-final-check.png)
 
 - Accessibility Checker using Wave Web Accessibility Evaluation Tool for Game Page.
   ![Accessibility Check passed on Game Page](assets/images/screenshots-validators/mm-last-validator-checks/wave-accessibility-checker.png)
+
+# HTML Validation checks for Homepage and Game page
 
 - HTML Validator Check using Nu HTML Checker for Home Page.
   ![HTML Validation check passed on Home Page](assets/images/screenshots-validators/mm-last-validator-checks/mm-html-validator-check-homepage-final.png)
@@ -149,11 +159,15 @@ Accessibility Errors:
 - HTML Validator Check using Nu HTML Checker for Game Page.
   ![HTML Validation check passed on Game Page](assets/images/screenshots-validators/mm-last-validator-checks/html-validator.png)
 
+# CSS Validation checks for Homepage and Game page
+
 - CSS Validator Check using The W3C Validation CSS Service - for Home Page.
   ![CSS Validation check passed for Home Page](assets/images/screenshots-validators/mm-last-validator-checks/mm-css-validator-check-homepage-final.png)
 
 - CSS Validator Check using The W3C Validation CSS Service - for Game Page.
   ![CSS Validation check passed for Game Page](assets/images/screenshots-validators/mm-last-validator-checks/css-validator-game-page.png)
+
+# Javascript JS Lint checks
 
 - JavaScript Validator using JS Lint (no filters)
   ![JavaScript validation without any filters](assets/images/screenshots-validators/mm-last-validator-checks/mm-jslint.png)
