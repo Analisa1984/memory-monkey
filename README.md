@@ -180,6 +180,8 @@ Accessibility Errors:
 
 ### Manual Testing
 
+Manual testing is the process whereby all components of a page are tested by manually going through each aspect of a page or software. This is done by also checking against the user stories to check if the program/ software complies. Manual testing is deployed if automated testing is not done to check all components are working as intended and can also be implemented to check the user experience. Automated testing does not test the user experience as this is usually subjective. In Memory Monkey, manual testing was done as automated testing was not done and to check the user experience. In most programs or software developemnt, a combination of both manual and automated testing is done.
+
 Manual testing - The various parts of the website was checked such as the navigation bar, links, buttons. The various parts were also manually tested on mobile and tablet sizes using inspect and responsiveness checks on the page.
 
 ### Table 1: Home Page testing
